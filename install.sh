@@ -32,6 +32,9 @@ $HOME/.composer/vendor/bin/valet install
 # Create a Code directory for our projects
 mkdir $HOME/Code
 
+# Configuring ignored files for all repositories
+git config --global core.excludesfile ~/.dotfiles/.gitignore_global
+
 # Install Oh My Zsh to manage our zsh configuration
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
