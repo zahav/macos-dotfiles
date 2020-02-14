@@ -13,3 +13,12 @@ brew update
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
 brew bundle
+
+# Install global Composer packages
+/usr/local/bin/composer global require laravel/installer laravel/valet
+
+# Install Laravel Valet
+$HOME/.composer/vendor/bin/valet install
+
+# Create a Code directory for our projects
+mkdir $HOME/Code
