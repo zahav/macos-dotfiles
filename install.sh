@@ -14,6 +14,12 @@ brew update
 brew tap homebrew/bundle
 brew bundle
 
+# Auto-start the MariaDB Server
+brew services start mariadb
+
+# Set default MySQL root password and auth type
+mysql_secure_installation
+
 # Install global Composer packages
 /usr/local/bin/composer global require laravel/installer laravel/valet
 

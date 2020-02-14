@@ -14,7 +14,7 @@ brew 'php@7.3'
 brew 'php@7.2'
 brew 'composer'
 brew 'imagemagick'
-brew 'mysql'
+brew 'mariadb'
 brew 'nginx'
 brew 'redis'
 brew 'yarn'
@@ -31,5 +31,5 @@ cask 'slack'
 cask 'visual-studio-code'
 cask 'whatsapp'
 
-# Remove outdated versions from the cellar.
+# Remove outdated versions from the cellar
 brew cleanup
