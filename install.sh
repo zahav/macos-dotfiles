@@ -20,6 +20,9 @@ brew services start mariadb
 # Set default MySQL root password and auth type
 mysql_secure_installation
 
+# Install PHP extensions with PECL
+pecl install memcached imagick
+
 # Install global Composer packages
 /usr/local/bin/composer global require laravel/installer laravel/valet
 
