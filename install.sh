@@ -41,3 +41,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+
+# Setup extensions for VS Code
+code \
+--install-extension abusaidm.html-snippets \
+--install-extension akamud.vscode-theme-onedark \
+--install-extension bmewburn.vscode-intelephense-client \
+--install-extension dbaeumer.vscode-eslint
