@@ -31,3 +31,10 @@ $HOME/.composer/vendor/bin/valet install
 
 # Create a Code directory for our projects
 mkdir $HOME/Code
+
+# Install Oh My Zsh to manage our zsh configuration
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
+rm -rf $HOME/.zshrc
+ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
