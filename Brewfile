@@ -18,3 +18,18 @@ brew 'mysql'
 brew 'nginx'
 brew 'redis'
 brew 'yarn'
+
+# Apps
+cask 'docker'
+cask 'firefox'
+cask 'github'
+cask 'google-chrome'
+cask 'postman'
+cask 'sequel-pro'
+cask 'skype'
+cask 'slack'
+cask 'visual-studio-code'
+cask 'whatsapp'
+
+# Remove outdated versions from the cellar.
+brew cleanup
