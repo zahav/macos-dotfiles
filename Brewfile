@@ -30,6 +30,3 @@ cask 'skype'
 cask 'slack'
 cask 'visual-studio-code'
 cask 'whatsapp'
-
-# Remove outdated versions from the cellar
-brew cleanup
