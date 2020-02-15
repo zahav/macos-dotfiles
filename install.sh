@@ -51,3 +51,7 @@ code \
 --install-extension akamud.vscode-theme-onedark \
 --install-extension bmewburn.vscode-intelephense-client \
 --install-extension dbaeumer.vscode-eslint
+
+# Set macOS preferences
+# We will run this last because this will reload the shell
+source .macos
