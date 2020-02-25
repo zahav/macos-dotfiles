@@ -17,6 +17,7 @@ brew 'imagemagick'
 brew 'mariadb'
 brew 'nginx'
 brew 'redis'
+brew 'terraform'
 brew 'yarn'
 
 # Apps
