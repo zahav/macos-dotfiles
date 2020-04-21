@@ -50,7 +50,8 @@ code \
 --install-extension abusaidm.html-snippets \
 --install-extension akamud.vscode-theme-onedark \
 --install-extension bmewburn.vscode-intelephense-client \
---install-extension dbaeumer.vscode-eslint
+--install-extension dbaeumer.vscode-eslint \
+--install-extension msazurermtools.azurerm-vscode-tools
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
