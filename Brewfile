@@ -6,6 +6,7 @@ tap 'homebrew/bundle'
 brew 'azure-cli'
 brew 'git'
 brew 'httpie'
+brew 'nmap'
 brew 'zlib' # Needed for Memcached
 
 # Development
