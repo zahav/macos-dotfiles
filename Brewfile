@@ -4,18 +4,24 @@ tap 'homebrew/bundle'
 
 # Binaries
 brew 'azure-cli'
+brew 'bash' # Latest Bash version
+brew 'coreutils' # Those that come with macOS are outdated
 brew 'git'
+brew 'gnupg2'
 brew 'httpie'
 brew 'nmap'
 brew 'zlib' # Needed for Memcached
 
 # Development
+brew 'php'
 brew 'php@7.4'
 brew 'php@7.3'
 brew 'composer'
 brew 'imagemagick'
-brew 'mariadb'
+brew 'memcached'
+brew 'mysql'
 brew 'nginx'
+brew 'node'
 brew 'redis'
 brew 'terraform'
 brew 'yarn'
@@ -29,5 +35,5 @@ cask 'postman'
 cask 'sequel-pro'
 cask 'skype'
 cask 'slack'
+cask 'tableplus'
 cask 'visual-studio-code'
-cask 'whatsapp'
