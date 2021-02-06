@@ -27,11 +27,16 @@ pecl install memcached imagick
 $HOME/.composer/vendor/bin/valet install
 
 # Install Oh My Zsh to manage our zsh configuration
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+
+# Link custom dotfiles
+ln -s $HOME/.dotfiles/aliases.zsh $HOME/.aliases.zsh
+ln -s $HOME/.dotfiles/path.zsh $HOME/.path.zsh
+ln -s $HOME/.dotfiles/.gitignore_global $HOME/.gitignore
 
 # Setup extensions for VS Code
 code \

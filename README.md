@@ -6,7 +6,7 @@ Your dotfiles are how you can setup and maintain your Mac. It takes the effort o
 
 #### 1. Update macOS to the latest version
 
-```console
+```bash
 sudo softwareupdate -i -a
 
 # Reboot after update
@@ -15,7 +15,7 @@ sudo softwareupdate -i -a --reboot
 
 #### 2. Install macOS Command Line Tools
 
-```console
+```bash
 xcode-select --install
 ```
 > The Xcode Command Line Tools includes `git` and `make` (not available on stock macOS).
@@ -31,7 +31,7 @@ xcode-select --install
 
 #### 4. Setup Git
 
-```console
+```bash
 # Set the git author email and username
 email="EMAIL"
 username="USERNAME"
@@ -42,7 +42,7 @@ git config --global user.email "${email}"
 git config --global user.name "${username}"
 git config --global user.signingkey "${gpgkeyid}"
 git config --global commit.gpgsign true
-git config --global core.excludesfile ~/.gitignore
+git config --global core.excludesfile $HOME/.gitignore
 
 # Create a Code directory for all our work
 mkdir $HOME/Code
@@ -61,7 +61,7 @@ cat $HOME/.ssh/github_rsa.pub
 - [Add the generated key to GitHub](https://github.com/settings/ssh/new)
 
 #### 5. Finally clone the repository
-```console
+```bash
 mkdir $HOME/.dotfiles
 git clone git@github.com:zahav/macos-dotfiles.git $HOME/.dotfiles
 ```
@@ -69,7 +69,7 @@ git clone git@github.com:zahav/macos-dotfiles.git $HOME/.dotfiles
 > Note: you can use a different location than `~/.dotfiles` if you want. Just make sure you also update the reference in the [`.zshrc`](./.zshrc) file.
 
 #### 6. Setup the development environment
-```console
+```bash
 cd $HOME/.dotfiles
 sh install.sh
 ```
