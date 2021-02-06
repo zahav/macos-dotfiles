@@ -4,7 +4,7 @@ echo "Setting up your Mac..."
 
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 # Update Homebrew recipes
@@ -25,12 +25,6 @@ pecl install memcached imagick
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
-
-# Create a Code directory for our projects
-mkdir $HOME/Code
-
-# Configuring ignored files for all repositories
-git config --global core.excludesfile ~/.dotfiles/.gitignore_global
 
 # Install Oh My Zsh to manage our zsh configuration
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
