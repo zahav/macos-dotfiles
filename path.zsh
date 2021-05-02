@@ -6,3 +6,6 @@ export PATH="$HOME/.node/bin:$PATH"
 
 # Use project specific binaries before global ones
 export PATH="node_modules/.bin:vendor/bin:$PATH"
+
+# Load Homebrew package manager
+export PATH="/opt/homebrew/bin:$PATH"
