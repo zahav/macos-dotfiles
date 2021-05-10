@@ -45,7 +45,8 @@ code \
 --install-extension akamud.vscode-theme-onedark \
 --install-extension bmewburn.vscode-intelephense-client \
 --install-extension dbaeumer.vscode-eslint \
---install-extension msazurermtools.azurerm-vscode-tools
+--install-extension msazurermtools.azurerm-vscode-tools \
+--install-extension-hashicorp.terraform
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
